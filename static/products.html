@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Рыбная бухта - Продукция</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Логотип" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/products">Продукция</a></li>
+                    <li><a href="/cart">Корзина</a></li>
+                    <li><a href="/checkout">Оформление заказа</a></li>
+                    <li><a href="/profile">Профиль</a></li>
+                </ul>
+            </nav>
+            <div class="search-cart">
+                <form method="get">
+                    <input type="search" placeholder="Поиск..." class="search"><i class="bx bx-basket"></i>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h3 class="title-page">Продукция магазина</h3>
+
+        <div class="products-container">
+            <!-- Пример одного товара -->
+            <form action="/product:/add_cart" method="get">
+                <div class="product-item">
+                    <img src="product.jpg" alt="Рыбное изделие 1" class="product-image">
+                    <hr class="line">
+                    <h3 class="name-product">Рыбное комбо</h3>
+                    <p class="product-description">Рыбное комбо состоит из рыбного филе, шпротов</p>
+                    <hr class="line">
+                    <p class="product-price">Цена: 1000 руб.</p>
+                    <button class="bth" type="submit">Добавить в корзину</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+</body>
+</html>
