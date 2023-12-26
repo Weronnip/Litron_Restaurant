@@ -29,8 +29,8 @@ app.get('/checkout', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../static', 'checkout.html'))
 })
 
-app.get('/profile', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../static', 'profile.html'))
+app.get('/storage', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../static', 'storage.html'))
 })
 
 const name_server = 'http://localhost:'

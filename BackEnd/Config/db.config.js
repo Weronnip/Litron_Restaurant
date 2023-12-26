@@ -1,6 +1,4 @@
-module.exports = {
-    HOST: 'localhost',
-    USER: 'root',
-    DATABASE: 'fish_database',
-    PASSWORD: 'root'
-}
+export const HOST = 'localhost';
+export const USER = 'root';
+export const DATABASE = 'fish_database';
+export const PASSWORD = 'root';
