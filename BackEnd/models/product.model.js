@@ -11,9 +11,11 @@ class Product {
         this.id_suppliers = id_suppliers;
     }
     save() {
-        Product.push(this);
+        products.push(this);
     }
     static getAll() {
-        return Product;
+        return products;
     }
 }
+
+export default Product

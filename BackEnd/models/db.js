@@ -16,7 +16,7 @@ connection.connect(function(err) {
   }
 });
 
-connection.execute("SELECT * FROM fish_database.clients", function(err, results) {
+connection.execute("SELECT * FROM fish_database.products", function(err, results) {
   console.log(err)
   console.log(results);
 })

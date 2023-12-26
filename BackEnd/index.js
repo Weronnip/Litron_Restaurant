@@ -2,6 +2,8 @@ import bodyParser from 'body-parser';
 import express from 'express';
 import path from 'path';
 
+// Route
+import productRoute from "./routes/products.routes.js"
 
 const app = express();
 const __dirname = path.resolve();
@@ -32,6 +34,11 @@ app.get('/checkout', (req, res) => {
 app.get('/storage', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../FrontEnd/Page', 'storage.html'))
 })
+app.get('/storage/panel', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../FrontEnd/Page', 'panel.html'))
+})
+
+app.post('/storage/postProduct', productRoute)
 
 const name_server = 'http://localhost:'
 const port = 3000;

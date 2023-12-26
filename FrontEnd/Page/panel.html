@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Рыбная бухта - Склад</title>
+    <title>Рыбная бухта - Склад / Панель Управления</title>
 </head>
 <body>
     <header>
@@ -29,39 +29,56 @@
     </header>
     
     <main>
-        <h3 class="title-page">Склад</h3>
+        <h3 class="title-page">Панель Управления</h3>
 
-        <div class="list__product">
-            <table>
-                <tr>
-                    <th rowspan="2" class="nap">Рыбные изделия</th>
-                    <th colspan="5" class="hum">Поставщики</th>
-                </tr>
-                <tr class="provider">
-                    <th class="name_provider">SeaNorth</th>
-                    <th class="name_provider">Baikal</th>
-                </tr>
-                <tr class="products">
-                    <td class="name_product">Рыбное Комбо</td>
-                    <td class="amount">1</td>
-                    <td class="amount">1</td>
-                </tr>
-                <tr class="products">
-                    <td class="name_product">Омуль</td>
-                    <td class="amount">1</td>
-                    <td class="amount">1</td>
-                    
-                </tr>
-                <tr class="total_result">
-                    <td class="total_amount">Итого:</td>
-                    <td class="result_amount">2</td>
-                    <td class="result_amount">2</td>
-                </tr>
-            </table>
+        <div class="add__product">
+            <form action="post_Product" method="post" class="form__add">
+                <label class="label__name">Введите id продукта: </label>
+                <input type="number" name="id_product" class="input__data" placeholder="id: 1">
 
+                <br>
+                <br>                
+
+                <label class="label__name">Введите название продукта: </label>
+                <input type="text" name="name_product" class="input__data" placeholder="Example">
+
+                <br>
+                <br>
+
+                <label class="label__name">Введите данные о продукте: </label>
+                <input type="text" name="about_product" class="input__data" placeholder="about...">
+
+                <br>
+                <br>
+
+                <label class="label__name">Введите имя поставщика: </label>
+                <input type="text" name="provider_name" class="input__data" placeholder="BlackFush">
+
+                <br>
+
+                <label class="label__name">Введите кол-во продуктов: </label>
+                <input type="text" name="quantity" class="input__data" placeholder="кол-во: 5">
+
+                <br>
+                <br>
+
+                <label class="label__name">Введите цену продукта: </label>
+                <input type="number" name="quantity" class="input__data" placeholder="150 руб">
+
+                <br>
+
+                <label class="label__name">Введите id поставщика:</label>
+                <input type="number" name="quantity" class="input__data" placeholder="id: 1">
+                
+                <br>
+                <br>
+
+                <button type="submit" class="bth__save">Сохранить</button>
+                
+            </form>
             <div class="panel__button">
                 <ul class="panel-links">
-                    <li><a href="/panel" class="bth__panel">Панель управления</a></li>
+                    <li><a href="/storage" class="bth__panel">Вернуться обратно <i class="bx bx-left-arrow"></i></a></li>
                 </ul>
             </div>
         </div>
