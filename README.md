@@ -6,7 +6,7 @@
 <h4 style="text-align: center;">Список библиотек</h4>
 
 <ul>
-    <li><a href="https://www.npmjs.com/package/express">Express Js</a></li>
+    <li><a href="https://www.npmjs.com/package/express" target="_blank">Express Js</a></li>
     <li><a href="https://www.npmjs.com/package/mysql2">MySql2</a></li>
     <li><a href="https://www.npmjs.com/package/body-parser">body parser</a></li>
 </ul>
