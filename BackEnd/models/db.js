@@ -1,11 +1,11 @@
-import { createConnection } from "mysql2";
-import dbConfig from '../Config/db.config';
+import { createConnection } from 'mysql2';
+import { HOST, USER, DATABASE, PASSWORD } from "../Config/db.config.js";
 
 const connection = createConnection({
-  host: dbConfig.HOST,
-  user: dbConfig.USER,
-  database: dbConfig.DATABASE,
-  password: dbConfig.PASSWORD
+  host: HOST,
+  user: USER,
+  database: DATABASE,
+  password: PASSWORD
 });
 
 connection.connect(function(err) {
@@ -17,6 +17,6 @@ connection.connect(function(err) {
 });
 
 connection.execute("SELECT * FROM fish_database.products", function(err, results) {
-  console.log(err);
+  console.log(err)
   console.log(results);
 })
