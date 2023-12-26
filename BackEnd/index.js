@@ -7,30 +7,30 @@ const app = express();
 const __dirname = path.resolve();
 
 
-app.use(express.static(path.resolve(__dirname, '../static')));
-app.use(express.static(path.resolve(__dirname, '../static/css')));
-app.use(express.static(path.resolve(__dirname, '../static/image')));
+app.use(express.static(path.resolve(__dirname, '../FrontEnd')));
+app.use(express.static(path.resolve(__dirname, '../FrontEnd/css')));
+app.use(express.static(path.resolve(__dirname, '../FrontEnd/image')));
 
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../static', 'index.html'))
+    res.sendFile(path.resolve(__dirname, '../FrontEnd', 'index.html'))
 })
 
 app.get('/products', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../static', 'products.html'))
+    res.sendFile(path.resolve(__dirname, '../FrontEnd/Page', 'products.html'))
 })
 
 app.get('/cart', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../static', 'cart.html'))
+    res.sendFile(path.resolve(__dirname, '../FrontEnd/Page', 'cart.html'))
 })
 
 app.get('/checkout', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../static', 'checkout.html'))
+    res.sendFile(path.resolve(__dirname, '../FrontEnd/Page', 'checkout.html'))
 })
 
 app.get('/storage', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../static', 'storage.html'))
+    res.sendFile(path.resolve(__dirname, '../FrontEnd/Page', 'storage.html'))
 })
 
 const name_server = 'http://localhost:'
