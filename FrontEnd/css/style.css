@@ -226,3 +226,15 @@ th, td{
     border-radius: 25px;
     color: #333;
 }
+
+.bx-save {
+    margin: 0% auto;
+}
+
+.line__section {
+    border-radius: 25px;
+    width: 80%;
+    height: 30px;
+    margin-top: 150px;
+    background-color: #4c8baf;
+}

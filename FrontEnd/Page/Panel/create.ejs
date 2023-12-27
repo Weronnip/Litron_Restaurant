@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Рыбная бухта - Склад / Панель Управления</title>
+    <link rel="stylesheet" href="/FrontEnd/css/style.css">
+    <title>Склад / Панель Управления / Новый продукт</title>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <img src="logo.png" alt="Логотип" class="logo">
+            <img src="/FrontEnd/image/logo.png" alt="Логотип" class="logo">
             <nav>
                 <ul class="nav-links">
                     <li><a href="/">Главная</a></li>
@@ -29,10 +29,10 @@
     </header>
     
     <main>
-        <h3 class="title-page">Панель Управления</h3>
+        <h3 class="title-page">Добавление продукта</h3>
 
         <div class="add__product">
-            <form action="post_Product" method="post" class="form__add">
+            <form action="/panel/create" class="form__add" method="post">
                 <label class="label__name">Введите id продукта: </label>
                 <input type="number" name="id_product" class="input__data" placeholder="id: 1">
 
@@ -68,17 +68,17 @@
                 <br>
 
                 <label class="label__name">Введите id поставщика:</label>
-                <input type="number" name="quantity" class="input__data" placeholder="id: 1">
+                <input type="number" name="id_suppliers" class="input__data" placeholder="id: 1">
                 
                 <br>
                 <br>
 
-                <button type="submit" class="bth__save">Сохранить</button>
+                <button type="submit" class="bth__save">Сохранить <i class="bx bx-save"></i></button>
                 
             </form>
             <div class="panel__button">
                 <ul class="panel-links">
-                    <li><a href="/storage" class="bth__panel">Вернуться обратно <i class="bx bx-left-arrow"></i></a></li>
+                    <li><a href="/storage/panel" class="bth__panel">Вернуться обратно <i class="bx bx-left-arrow"></i></a></li>
                 </ul>
             </div>
         </div>
