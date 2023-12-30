@@ -1,0 +1,27 @@
+.window__error {
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 55px;
+    margin: 0% auto;
+    margin-top: 150px;
+    width: 500px;
+    height: 300px;
+    display: block;
+}
+
+.error__title {
+    color: aqua;
+    font-size: 30px;
+    padding-top: 55px;
+    text-align: center;
+}
+
+.error__text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bth__error {
+    color: aqua;
+    text-decoration: none;
+}

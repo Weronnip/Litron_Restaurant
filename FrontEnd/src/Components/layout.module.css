@@ -1,0 +1,45 @@
+.header__container {
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 100%;
+    height: 130px;
+    padding: 10px 20px;
+}
+
+.logo__nav {
+    top: 15px;
+    width: 90px;
+    height: 90px;
+    margin-left: 15px;
+    position: relative;
+    justify-content: start;
+    filter: invert(55%) sepia(51%) saturate(4000%) hue-rotate(160deg) brightness(1950%) contrast(100%);
+}
+
+.nav_links {
+    bottom: 70px;
+    display: flex;
+    list-style: none;
+    position: relative;
+    justify-content: center;
+}
+
+.bth__links {
+    color: white;
+    font-size: 20px;
+    margin: 0 15px 15px 0px;
+    text-decoration: none;
+}
+
+.icons {
+    top: 3px;
+    left: 3px;
+    position: relative;
+}
+
+/* footer */
+
+.footer__container {
+    width: 100%;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.705);
+}

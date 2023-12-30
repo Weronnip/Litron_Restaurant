@@ -1,48 +1,25 @@
-import bodyParser from 'body-parser';
-import express from 'express';
-import path from 'path';
+// imports
+import express from "express";
+import path from "path";
+import "dotenv/config";
 
-// import {connection} from "./models/db.js"
-
+// main const
 const app = express();
 const __dirname = path.resolve();
 
+// .env
+const NAME = process.env.NAME_HOST;
+const PORT = process.env.PORT || 8000;
 
-app.use(express.static(path.resolve(__dirname, '../FrontEnd')));
-app.use(express.static(path.resolve(__dirname, '../FrontEnd/css')));
-app.use(express.static(path.resolve(__dirname, '../FrontEnd/image')));
-
-app.set('view engine', 'ejs')
-app.use(bodyParser.json());
-app.use(express.json())
-
-
+// routes
 app.get('/', (req, res) => {
-    res.render(path.resolve(__dirname, '../FrontEnd', 'index.ejs'))
+    res.send('Hello, world')
 })
 
-app.get('/products', (req, res) => {
-    res.render(path.resolve(__dirname, '../FrontEnd/Page', 'products.ejs'))
-})
-
-app.get('/cart', (req, res) => {
-    res.render(path.resolve(__dirname, '../FrontEnd/Page', 'cart.ejs'))
-})
-
-app.get('/checkout', (req, res) => {
-    res.render(path.resolve(__dirname, '../FrontEnd/Page', 'checkout.ejs'))
-})
-
-app.get('/storage', (req, res) => {
-    res.render(path.resolve(__dirname, '../FrontEnd/Page', 'storage.ejs'))
-})
-
-app.get('/storage/panel/create', (req, res) => {
-    res.render(path.resolve(__dirname, '../FrontEnd/Page/Panel', 'create.ejs'))
-})
-
-const name_server = 'http://localhost:'
-const port = 3000;
-app.listen(port, () => {
-    console.log(`Server starting: ${name_server + port}`)
-})
+try {
+    app.listen(PORT, () => {
+        console.log(`Server starting to do addres: ${NAME + PORT}`)
+    })
+} catch (error) {
+    console.log("Error in the line: ", error);
+}
